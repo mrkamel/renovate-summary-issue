@@ -1,0 +1,33 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>mrkamel/renovate-summary-issue",
+    "local>mrkamel/renovate-summary-issue:ruby"
+  ],
+  "schedule": "after 6am",
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions updates"
+    },
+    {
+      "matchDepTypes": [],
+      "matchManagers": ["bundler"],
+      "groupName": "all ruby dependencies"
+    },
+    {
+      "matchDepTypes": ["test"],
+      "matchManagers": ["bundler"],
+      "groupName": "all ruby test dependencies"
+    },
+    {
+      "matchManagers": ["ruby-version", "dockerfile"],
+      "groupName": "ruby-version-update"
+    },
+    {
+      "matchPackageNames": ["rails"],
+      "matchManagers": ["bundler"],
+      "allowedVersions": "<7"
+    }
+  ]
+}

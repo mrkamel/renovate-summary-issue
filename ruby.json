@@ -1,0 +1,6 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "rangeStrategy": "update-lockfile",
+  "updatePinnedDependencies": false,
+  "separateMajorMinor": false
+}
