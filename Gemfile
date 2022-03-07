@@ -18,7 +18,7 @@ gem 'aws-sdk-sqs'
 # gem 'rack-cors'
 
 gem 'committee', '~> 4.4'
-gem 'openapi_parser', '~> 0.15'
+gem 'openapi_parser', '~> 1.0'
 
 gem 'ddtrace'
 gem 'faraday'
