@@ -29,7 +29,7 @@ gem 'shoryuken'
 gem 'simple_xlsx_reader'
 
 group :development, :test do
-  gem 'pry', '~> 0.14.1'
+  gem 'pry', '~> 0.16.0'
   gem 'pry-rails'
   gem 'pry-remote'
 end
